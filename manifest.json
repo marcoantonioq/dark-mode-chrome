@@ -1,0 +1,50 @@
+{
+    "name": "DarkMode",
+    "description": "Extensão darkmode Opera.",
+    "version": "1",
+    "manifest_version": 2,
+    "permissions": [
+        "contextMenus",
+        "notifications",
+        "tabs",
+        "unlimitedStorage",
+        "http://*/*",
+        "https://*/*"
+    ],
+    "commands": {
+        "_execute_browser_action": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+D"
+            }
+        }
+    },
+    "content_scripts": [{
+            "js": [
+                "lib/AppDark.js"
+            ],
+            "matches": [
+                "*://*/*"
+            ],
+            "run_at": "document_start"
+        },
+        {
+            "css": [
+                "css/style.css"
+            ],
+            "matches": [
+                "*://*.google.com.br/search",
+                "*://*.google.com/search",
+                "*://*.google.com.br/",
+                "*://*.google.com/",
+                "*://ifg.edu.br/*"
+            ],
+            "run_at": "document_start"
+        }
+    ],
+    "homepage_url": "http://ifg.edu.br/goais",
+    "browser_action": {
+        "default_icon": "icons/icon.png",
+        "default_title": "Dark",
+        "default_popup": "popup.html"
+    }
+}
