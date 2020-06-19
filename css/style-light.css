@@ -1,5 +1,5 @@
 :root {
-    --background-color: #1e1e1e;
+    --background-color: #F0DEC6;
     --primary-color: #157efb;
     --font-color: #b1b1b1;
     --font-a: #807600;
@@ -11,10 +11,6 @@
     --menu-item-alert-shadow: #151513;
     --alert-border-color: #000;
     --tertiary-color: #727680;
-}
-
-html {
-    filter: invert(100%);
 }
 
 @media screen and (prefers-color-scheme: dark) {
@@ -43,7 +39,6 @@ html {
     h4,
     [id*=title],
     [class*=title] {
-        color: var(--font-color) !important;
         background-color: var(--block-background-color) !important;
     }
     /* Headers */
@@ -55,7 +50,6 @@ html {
     #hdtbSum,
     .table-striped>tbody>tr:nth-of-type(odd) {
         background-color: var(--block-background-color) !important;
-        color: var(--font-color) !important;
     }
     /* Links */
     a,
@@ -67,12 +61,4 @@ html {
     .YD4Yw {
         background-color: #0000003d;
     }
-}
-
-.prettyprint {
-    background: var(--background-color) !important;
-}
-
-.pln {
-    color: rgb(255, 255, 255)!important;
 }
