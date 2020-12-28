@@ -13,66 +13,38 @@
     --tertiary-color: #727680;
 }
 
+
+/* Elementos  */
+
+button,
+img,
+svg,
+video,
+ytd-topbar-menu-button-renderer {
+    filter: invert(100%);
+}
+
+
+/* links */
+
+a[class*=success] {
+    filter: invert(100%);
+}
+
+
+/* Generica */
+
 html {
     filter: invert(100%);
 }
 
+
+/* Google Icons APP*/
+
+li.j1ei8c {
+    /* filter: invert(100%) */
+}
+
 @media screen and (prefers-color-scheme: dark) {
     /* Contents */
-    body,
-    p,
-    div.description,
-    .table-responsive,
-    .table,
-    .s,
-    .columns,
-    #content {
-        background: var(--background-color) !important;
-        color: var(--font-color) !important;
-    }
-    /* Text */
-    span.str,
-    .pun,
-    .pln {
-        color: var(--font-color) !important;
-    }
-    /* Titles */
-    h1,
-    h2,
-    h3,
-    h4,
-    [id*=title],
-    [class*=title] {
-        color: var(--font-color) !important;
-        background-color: var(--block-background-color) !important;
-    }
-    /* Headers */
-    dd,
-    td,
-    .header,
-    .breadcrumb,
-    #top_nav,
-    #hdtbSum,
-    .table-striped>tbody>tr:nth-of-type(odd) {
-        background-color: var(--block-background-color) !important;
-        color: var(--font-color) !important;
-    }
-    /* Links */
-    a,
-    cite {
-        color: var(--font-a);
-        font-weight: 500;
-    }
-    /* whatsapp */
-    .YD4Yw {
-        background-color: #0000003d;
-    }
-}
-
-.prettyprint {
-    background: var(--background-color) !important;
-}
-
-.pln {
-    color: rgb(255, 255, 255)!important;
 }
