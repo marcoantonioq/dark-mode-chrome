@@ -1,6 +1,6 @@
 {
     "name": "DarkMode",
-    "description": "Extensão darkmode Opera.",
+    "description": "Extensão DarkMode Opera.",
     "version": "1",
     "manifest_version": 2,
     "permissions": [
@@ -38,7 +38,7 @@
             "run_at": "document_start"
         }
     ],
-    "homepage_url": "http://ifg.edu.br/goais",
+    "homepage_url": "http://marcoantonioq.github.io/",
     "browser_action": {
         "default_title": "Dark",
         "default_popup": "popup.html"
